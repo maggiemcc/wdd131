@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+header {
+    padding: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: .5rem;
+  /* width: 100%; */
+  gap: 1rem;
+  margin: .5rem auto;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+}
