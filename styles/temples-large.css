@@ -1,13 +1,31 @@
-@media screen and (min-width: 490px) and (max-width: 899px) {
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
+/* @media screen and (min-width: 490px) and (max-width: 899px) { */
+@media screen and (min-width: 500px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    /* max-width: 500px; */
+  }
+
+  nav a {
+    flex: 1 1 100%;
+    margin: 1rem;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-
-
 @media screen and (min-width: 900px) {
-    main {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
