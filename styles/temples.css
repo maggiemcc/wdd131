@@ -1,3 +1,14 @@
+:root {
+  --primary-color: rgb(0, 0, 110);
+  --second-color: rgb(65, 65, 243);
+  --font-color: #fff;
+  --font-size: 2rem;
+  --margin: auto;
+  --border-radius: 10px;
+  --border-radius-top: 10px 10px 0 0;
+  --border-radius-bottom: 0 0 10px 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +17,8 @@
 
 body {
   width: 100%;
+  font-family: "Nunito", sans-serif;
+
 }
 
 header,
@@ -15,18 +28,15 @@ footer {
 }
 
 h1,
-h2,
-nav a {
-  font-family: "Nunito", sans-serif;
+h2 {
   font-weight: 900;
   font-size: 1.5rem;
 }
 
 header {
-  color: white;
-  display: flex;
-  background-color: rgb(0, 0, 110);
-  border-radius: 0px 0px 10px 10px;
+  color: var(--font-color);
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius-bottom);
 
   display: grid;
   grid-gap: 1rem;
@@ -34,26 +44,26 @@ header {
 
 #menu {
   position: absolute;
-  top: 25px;
-  right: 25px;
-  color: white;
-  background-color: rgb(0, 0, 110);
+  top: 15px;
+  right: 20px;
+  color: var(--font-color);
+  background-color: var(--primary-color);
   border: 0;
 }
 
 #menu::before {
   content: "\2630";
   cursor: pointer;
-  font-size: 2rem;
+  font-size: var(--font-size);
 }
 
 #menu.open::before {
   content: "x";
-  font-size: 2rem;
+  font-size: var(--font-size);
 }   
 
 nav ul {
-  margin: auto;
+  margin: var(--margin);
   list-style: none;
 
   display: flex;
@@ -62,7 +72,8 @@ nav ul {
 
 nav a {
   display: none;
-  color: white;
+  color: var(--font-color);
+  font-weight: 700;
   text-decoration: none;
   text-align: center;
   padding: 2%;
@@ -70,7 +81,7 @@ nav a {
 }
 
 nav ul li:hover{
-    background-color: rgb(65, 65, 243);
+    background-color: var(--second-color);
     border-radius: 10px;
 }
 
@@ -79,7 +90,7 @@ nav ul li:hover{
 }
 
 .open li:first-child {
-    border-top: 3px solid rgb(65, 65, 243);
+    border-top: 3px solid var(--second-color);
 }
 
 main {
@@ -88,34 +99,45 @@ main {
   grid-template-columns: 1fr;
   gap: 1rem;
   text-align: center;
-  margin: auto;
-  /* min-height: 90vh; */
-
+  margin: 2% auto;
 }
 
 main h1 {
   grid-column: 1 / -1;
-  font-size: 2rem;
+  font-size: var(--font-size);
+  margin-bottom: 1rem;
+  color:var(--primary-color);
 }
 
-main figure {
+figure {
   width: 80%;
-  margin: auto;
-  padding: 0;
-  /* object-fit: cover; */
+  max-width: 400px;
+  margin: var(--margin);
+  font-weight: 500;
+  border: 3px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
 }
 
-main figure img {
+figure img {
   height: 250px;
   width: 100%;
   object-fit: cover;
   max-width: 400px;
+  border-radius: 10px 10px 0px 0px;
 }
+
+figure figcaption {
+  padding: .5rem;
+  color: var(--font-color);
+}
+
+
 
 footer {
   text-align: center;
-  background-color: rgb(0, 0, 110);
-  border-radius: 10px 10px 0px 0px;
-  color: white;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius-top);
+  color: var(--font-color);
   padding: 2rem;
 }
