@@ -6,23 +6,66 @@
 
 body {
   width: 100%;
+}
+
+header,
+main,
+footer {
   padding: 1rem;
-  margin: 1rem;
+}
+
+h1,
+h2,
+nav a {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
 }
 
 header {
-    padding: 1rem;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  background-color: rgb(0, 0, 110);
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  margin: auto;
+  list-style: none;
+  max-width: 500px;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  flex: 1 1 100%;
+  margin: 1rem;
 }
 
 main {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  padding: .5rem;
-  /* width: 100%; */
   gap: 1rem;
-  margin: .5rem auto;
+
+  /* padding: .5rem; */
+  /* margin: .5rem auto; */
+
+  /* padding: 0; */
+  margin: auto;
 }
 
 main h1 {
-    grid-column: 1 / -1;
+  grid-column: 1 / -1;
+}
+
+main figure {
+  width: 80%;
+  margin: 0;
+  padding: 0;
 }

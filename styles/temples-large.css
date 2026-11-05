@@ -1,4 +1,4 @@
-@media screen and (min-width: 400px) and (max-width: 699px) {
+@media screen and (min-width: 490px) and (max-width: 899px) {
     main {
         grid-template-columns: 1fr 1fr;
     }
@@ -6,7 +6,7 @@
 
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
     }
