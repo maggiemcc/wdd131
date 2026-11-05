@@ -30,7 +30,6 @@ header {
 
   display: grid;
   grid-gap: 1rem;
-  padding: 1rem;
 }
 
 #menu {
@@ -45,10 +44,12 @@ header {
 #menu::before {
   content: "\2630";
   cursor: pointer;
+  font-size: 2rem;
 }
 
 #menu.open::before {
   content: "x";
+  font-size: 2rem;
 }   
 
 nav ul {
@@ -75,6 +76,10 @@ nav ul li:hover{
 
 .open a {
 	display: block;
+}
+
+.open li:first-child {
+    border-top: 3px solid rgb(65, 65, 243);
 }
 
 main {

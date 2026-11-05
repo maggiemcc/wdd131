@@ -27,7 +27,12 @@
     flex: 1 1 100%;
     margin: 1rem;
     display: block;
+    font-size: 1rem;
   }
+
+  .open li:first-child {
+    border-top: none;
+}
 
   main {
     grid-template-columns: 1fr 1fr 1fr;
