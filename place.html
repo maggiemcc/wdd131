@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="description" content="WDD 131 - Assignment 3 - Country Place Page">
+    <meta name="author" content="Maggie McCausland">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script defer src="scripts/getdates.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headerDiv">
+            <h1>United States of America</h1>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/place/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/place/hero-medium.webp">
+                <img srcset="images/place/hero-small.webp" alt="USA Country Hero Image">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>Area: 3,796,742 sq mi</li>
+                <li>Population: 349,817,658</li>
+                <li>Capital: Washington D.C.</li>
+                <li>Language: English</li>
+                <li>Currency: United States Dollar (USD)</li>
+                <li>Time Zone: UTC -5 to -10</li>
+                <li>Calling Code: +1</li>
+                <li>Internet TLD: .us</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <div>
+                <h2>Weather</h2>
+                <!-- <img src="images/place/weather.jpg" alt="Weather Image"> -->
+            </div>
+
+            <ul>
+                <li>Temperature: 72°F</li>
+                <li>Conditions: Partly Cloudy</li>
+                <li>Wind: 3 mph</li>
+                <li>Wind Chill: 65°F</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>©<span id="currentYear"></span> 🐝 Maggie McCausland 🐝 Utah, USA</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

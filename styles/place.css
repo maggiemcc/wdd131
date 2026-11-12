@@ -1,0 +1,86 @@
+:root {
+  --primary-color: rgb(0, 0, 110);
+  --second-color: rgb(179, 25, 66);
+  --font-color: #fff;
+  --font-size: 2rem;
+  --margin: auto;
+  --border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.3rem;
+}
+
+main,
+footer {
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+header {
+  color: var(--font-color);
+  background-color: var(--second-color);
+  border-radius: 0px 0px 0px 10px;
+  padding-bottom: 0.5rem;
+}
+
+.headerDiv {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-radius: 0px 0px 0px 10px;
+}
+
+main {
+  width: 100%;
+  text-align: center;
+  margin: 2% auto;
+  padding: 0.5rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+main h1 {
+  font-size: var(--font-size);
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+main li {
+  list-style: none;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--second-color);
+  border-radius: 10px 0px 0px 0px;
+  color: var(--font-color);
+  padding: 0;
+  padding-top: 0.5rem;
+}
+
+footer div {
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-radius: 10px 0px 0px 0px;
+}
