@@ -7,6 +7,10 @@
     background-color: rgb(0, 0, 110);
   }
 
+  h1 {
+    font-size: 3rem;
+  }
+
   .hero {
     display: block;
     position: relative;
@@ -57,12 +61,5 @@
 
   main section:last-child {
     border-top: none;
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
   }
 }
