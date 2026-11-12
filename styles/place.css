@@ -16,7 +16,7 @@
 body {
   width: 100%;
   font-family: "Londrina Solid", sans-serif;
-  font-weight: 300;
+  font-weight: 100;
   font-style: normal;
   font-size: 1.3rem;
 }
@@ -58,16 +58,26 @@ main {
   border-radius: var(--border-radius);
 }
 
-main h1 {
+main h2 {
   font-size: var(--font-size);
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
 
+main section:last-child {
+  margin-top: 2rem;
+  border-top: 1px solid var(--primary-color);
+  padding-top: 2rem;
+}
+
 main li {
   list-style: none;
-  margin: 1rem;
-  padding: 0.5rem;
+  text-align: center;
+  padding: .4rem 0;
+}
+
+main span {
+  font-weight: 400;
 }
 
 footer {
