@@ -82,6 +82,11 @@ main span {
   font-weight: 400;
 }
 
+.weather-icon img {
+    width: 100%;
+    max-width: 50px;
+}
+
 footer {
   text-align: center;
   background-color: var(--second-color);
