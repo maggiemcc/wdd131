@@ -4,7 +4,6 @@
   --font-color: #fff;
   --font-size: 2rem;
   --margin: auto;
-  --border-radius: 10px;
 }
 
 * {
@@ -35,27 +34,30 @@ h1 {
 header {
   color: var(--font-color);
   background-color: var(--second-color);
-  border-radius: 0px 0px 0px 10px;
   padding-bottom: 0.5rem;
 }
 
 .headerDiv {
   padding: 1rem;
   background-color: var(--primary-color);
-  border-radius: 0px 0px 0px 10px;
 }
 
 main {
   width: 100%;
   text-align: center;
-  margin: 2% auto;
-  padding: 0.5rem;
+  /* margin: 2% auto;
+  padding: 0.5rem; */
+  /* margin-top: 1rem; */
+  margin: 0;
+  padding: 0;
 }
 
 .hero img {
   width: 100%;
   height: auto;
-  border-radius: var(--border-radius);
+  border-top: 8px solid var(--primary-color);
+  border-bottom: 8px solid var(--primary-color);
+  margin-bottom: 1rem;
 }
 
 main h2 {
@@ -83,14 +85,13 @@ main span {
 footer {
   text-align: center;
   background-color: var(--second-color);
-  border-radius: 10px 0px 0px 0px;
   color: var(--font-color);
   padding: 0;
   padding-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 footer div {
   padding: 1rem;
   background-color: var(--primary-color);
-  border-radius: 10px 0px 0px 0px;
 }
