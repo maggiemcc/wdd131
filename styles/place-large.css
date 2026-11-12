@@ -1,0 +1,68 @@
+/* @media (min-width: 800px) and (max-width: 1400px) { */
+@media (min-width: 1000px) {
+  body {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    background-color: rgb(0, 0, 110);
+  }
+
+  .hero {
+    display: block;
+    position: relative;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  main {
+    background-color: transparent;
+    position: relative;
+  }
+
+  .data,
+  .weather {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    padding: 1.3rem;
+    font-size: 1.2rem;
+    width: auto;
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 35px;
+  }
+
+  .data {
+    top: 50px;
+    left: 50px;
+  }
+
+  .weather {
+    bottom: 50px;
+    right: 50px;
+  }
+
+  .weather h2::after {
+    display: block;
+    content: "🌤️";
+    font-size: 5rem;
+  }
+  .weather img {
+    display: none;
+  }
+
+  main section:last-child {
+    border-top: none;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}

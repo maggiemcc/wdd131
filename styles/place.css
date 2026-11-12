@@ -29,12 +29,14 @@ h1 {
   text-align: center;
   font-weight: 900;
   font-size: 2rem;
+  width: 100%;
 }
 
 header {
   color: var(--font-color);
   background-color: var(--second-color);
   padding-bottom: 0.5rem;
+  width: 100%;
 }
 
 .headerDiv {
@@ -50,6 +52,11 @@ main {
   /* margin-top: 1rem; */
   margin: 0;
   padding: 0;
+  background-color: #fff;
+}
+
+.hero {
+    width: 100%;
 }
 
 .hero img {
@@ -81,8 +88,11 @@ main li {
 main span {
   font-weight: 400;
 }
+.weather-icon {
+    display: none;
+}
 
-.weather-icon img {
+.weather img {
     width: 100%;
     max-width: 50px;
 }
