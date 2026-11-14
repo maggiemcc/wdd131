@@ -14,5 +14,10 @@ if (temp <= 50 && speed > 3){
     windChill = "N/A";
 }
 
-const liTag = document.getElementById('wind-chill');
-liTag.insertAdjacentText('beforeend', windChill);
+const tempTag = document.getElementById('temp');
+const speedTag = document.getElementById('wind-speed');
+const chillTag = document.getElementById('wind-chill');
+
+tempTag.insertAdjacentText('beforeend', `${temp}°F`);
+speedTag.insertAdjacentText('beforeend', `${speed} mph`);
+chillTag.insertAdjacentText('beforeend', windChill);
