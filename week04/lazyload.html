@@ -3,19 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading</title>
     <link rel="stylesheet" href="styles/lazy.css">
     <script defer src="scripts/script.js"></script>
+    <script defer src="/scripts/getdates.js"></script>
 </head>
 
 <body>
 
     <main>
-        <h1></h1>
-        <img src="images/anyphoto.jpg" alt="A good description of the non decorative image" loading="lazy" width="300" height="500">
-
+        <h1>Lazy Loading Temple Images</h1>
+        <picture>
+            <img src="https://placehold.co/400x600" alt="Salt Lake Utah Temple" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placehold.co/450x600" alt="Manila Philippines Temple" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placehold.co/500x600" alt="Star Valley Wyoming Temple" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placehold.co/550x600" alt="Idaho Falls Idaho Temple" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placehold.co/600x600" alt="Provo City Center Utah Temple" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placehold.co/650x600" alt="Draper Utah Temple" loading="lazy" width="400" height="600">
+        </picture>
     </main>
+
+    <footer>
+        <p>©<span id="currentYear"></span> 🐝 Maggie McCausland 🐝 Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
 
 </body>
 
