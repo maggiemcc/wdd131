@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="WDD 131 - temple picture album page with user interaction">
+    <meta name="author" content="Maggie McCausland">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h2>Temple Album</h2>
+        <button type="button" id="menu" aria-label="navigation menu"></button>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="temples.html">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="temple-grid"></div>
+    </main>
+
+    <footer>
+        <p>©<span id="currentYear"></span> 🐝 Maggie McCausland 🐝 Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
