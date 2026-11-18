@@ -15,7 +15,7 @@ const temples = [
         dedicated: "2005, August, 7",
         area: 11500,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+            "https://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-5087-main.jpg"
     },
     {
         templeName: "Manti Utah",
@@ -97,15 +97,18 @@ const temples = [
 let templeGrid = document.querySelector(".temple-grid");
 
 // Create cards for each temple
-function createTempleCards() {
-    temples.forEach(temple => {
+function createTempleCards(chosentemples) {
+    // Clear HTML to not show duplicates
+    templeGrid.innerHTML = "";
+
+    chosentemples.forEach(temple => {
         let card = document.createElement("section");
         card.innerHTML = `
         <div class="card-info">
         <h3>${temple.templeName}</h3>
-        <p>Location: ${temple.location}<p>
-        <p>Dedicated: ${temple.dedicated}</p>
-        <p>Size: ${temple.area}</p>
+        <p><span>Location:</span> ${temple.location}<p>
+        <p><span>Dedicated:</span> ${temple.dedicated}</p>
+        <p><span>Size:</span> ${temple.area} sq ft</p>
         </div>
         <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
         `;
@@ -113,22 +116,41 @@ function createTempleCards() {
         templeGrid.appendChild(card);
     });
 }
-
-createTempleCards();
+createTempleCards(temples);
 
 
 // Filter temples using nav
+let pageTitle = document.querySelector("#page-title");
+
 document.querySelector("#home").addEventListener('click', () => {
+    pageTitle.textContent = "Home";
+    createTempleCards(temples);
 });
 
 document.querySelector("#old").addEventListener('click', () => {
+    pageTitle.textContent = "Old";
+
+    const oldTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+    createTempleCards(oldTemples);
 });
 
 document.querySelector("#new").addEventListener('click', () => {
+    pageTitle.textContent = "New";
+
+    let newTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+    createTempleCards(newTemples);
 });
 
 document.querySelector("#large").addEventListener('click', () => {
+    pageTitle.textContent = "Large";
+
+    let largeTemples = temples.filter(temple => temple.area > 90000);
+    createTempleCards(largeTemples);
 });
 
 document.querySelector("#small").addEventListener('click', () => {
+    pageTitle.textContent = "Small";
+
+    let smallTemples = temples.filter(temple => temple.area < 10000);
+    createTempleCards(smallTemples);
 });
