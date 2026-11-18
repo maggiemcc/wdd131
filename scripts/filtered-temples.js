@@ -7,7 +7,7 @@ navButton.addEventListener('click', () => {
     navList.classList.toggle('open');
 });
 
-// Temples Array
+// Temple Array
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -65,12 +65,38 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
+
     // Add more temple objects here...
+
+    {
+        templeName: "Provo City Center",
+        location: "Provo, Utah, United States",
+        dedicated: "2016, March, 20",
+        area: 85084,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/provo-city-center-temple/provo-city-center-temple-56386-main.jpg"
+    },
+    {
+        templeName: "Manila Philippines",
+        location: "Manila, Philippines",
+        dedicated: "1984, September, 27",
+        area: 26683,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/_temp/029-Manila-Philippines-Temple.jpg"
+    },
+    {
+        templeName: "Idaho Falls Idaho",
+        location: "Idaho Falls, Idaho, United States",
+        dedicated: "1945, September, 25",
+        area: 85624,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/idaho-falls-idaho-temple/idaho-falls-idaho-temple-73404-main.jpg"
+    }
 ];
 
 let templeGrid = document.querySelector(".temple-grid");
-createTempleCards();
 
+// Create cards for each temple
 function createTempleCards() {
     temples.forEach(temple => {
         let card = document.createElement("section");
@@ -87,3 +113,22 @@ function createTempleCards() {
         templeGrid.appendChild(card);
     });
 }
+
+createTempleCards();
+
+
+// Filter temples using nav
+document.querySelector("#home").addEventListener('click', () => {
+});
+
+document.querySelector("#old").addEventListener('click', () => {
+});
+
+document.querySelector("#new").addEventListener('click', () => {
+});
+
+document.querySelector("#large").addEventListener('click', () => {
+});
+
+document.querySelector("#small").addEventListener('click', () => {
+});

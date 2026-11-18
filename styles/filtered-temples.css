@@ -109,19 +109,20 @@ main h1 {
 }
 
 .temple-grid section {
-  width: 80%;
+  width: 100%;
   max-width: 350px;
   font-weight: 500;
   border: 4px solid var(--second-color);
   border-radius: var(--border-radius);
-  margin: 0;
-  /* padding: .5rem; */
+  margin: auto;
   box-shadow: 5px 5px 10px #888888;
+  height: 100%;
 }
 
 .card-info {
   margin: 0.5rem 0;
-  min-height: 130px;
+  padding: 2%;
+  min-height: 145px;
 }
 
 .temple-grid img {
@@ -130,9 +131,6 @@ main h1 {
   display: block;
   object-fit: cover;
   max-width: 400px;
-  /* border-radius: 0px 0px 8px 8px; */
-  /* padding: 0; */
-  /* margin: 0; */
   border-top: 4px solid var(--second-color);
 }
 
