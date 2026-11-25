@@ -19,7 +19,9 @@ body {
 }
 
 header,
-h1, h2, h3,
+h1,
+h2,
+h3,
 footer {
   font-family: "Londrina Solid", sans-serif;
   font-weight: 400;
@@ -58,12 +60,11 @@ section:first-child {
 h2 {
   font-size: 2rem;
   color: var(--primary-color);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 h3 {
   font-size: 1.5rem;
-
 }
 
 p,
@@ -74,6 +75,12 @@ ul {
 
 ul {
   padding: 0 1.5%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 .colors {
@@ -92,6 +99,28 @@ ul {
   width: 100px;
 }
 
+.colors .primary-color {
+  background-color: #000;
+}
+
+.colors .sec-color {
+  background-color: #fff;
+}
+
+.colors .accent-color {
+  background-color: #d16500;
+}
+
+.wireframes h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.wireframes img {
+    width: 100%;
+    max-width: 600px;
+}
+
 footer {
   text-align: center;
   background-color: var(--primary-color);
@@ -103,3 +132,4 @@ footer {
   color: yellow;
   font-size: 14px;
 }
+
