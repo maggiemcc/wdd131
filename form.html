@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Maggie McCausland">
+    <meta name="description" content="WDD131 Week 5 product review form assignment">
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset class="product">
+                <label>Product Name
+                    <select name="product">
+                        <option value="" selected disabled>Select a Product</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset class="rating">
+                <div>Overall Rating</div>
+                <label>☆<input type="radio" name="rating" value="one"></label>
+                <label>☆☆<input type="radio" name="rating" value="two"></label>
+                <label>☆☆☆<input type="radio" name="rating" value="three"></label>
+                <label>☆☆☆☆<input type="radio" name="rating" value="four"></label>
+                <label>☆☆☆☆☆<input type="radio" name="rating" value="five"></label>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> 🐝 Maggie McCausland 🐝 Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

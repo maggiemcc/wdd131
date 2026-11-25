@@ -1,0 +1,85 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: none;
+}
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header, footer {
+    background-color: rgb(54, 0, 54);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+form {
+    background-color: rgb(228, 206, 228);
+    min-height: 100px;
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 15px;
+    display: block;
+    
+}
+
+fieldset {
+    border: none;
+    margin: 1.5rem 0;
+}
+
+fieldset:first-child {
+    margin: 0;
+}
+
+form label, form div {
+    font-weight: bold;
+}
+
+form label, form select{
+    display: block;
+}
+
+.product select {
+    height: 55px;
+    width: 100%;
+    min-width: 200px;
+    margin: .5rem 0;
+    padding: 5px;
+}
+
+.product label {
+    margin-bottom: .5rem;
+}
+
+.rating {
+    width: 100%;
+    text-align: center;
+}
+
+.rating div {
+    text-align: left;
+}
+
+.rating label {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 15px;
+}
+
+.rating input {
+    position: absolute;
+    top: 28px;
+    left: 50%;
+    margin-left: -13px;
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+}
