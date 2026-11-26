@@ -1,85 +1,134 @@
 * {
-    padding:0;
-    margin: 0;
-    box-sizing: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
-header, footer {
-    background-color: rgb(54, 0, 54);
-    color: white;
-    text-align: center;
-    padding: 1rem;
+header,
+footer {
+  background-color: rgb(54, 0, 54);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+main {
+  padding: 0.5rem;
 }
 
 form {
-    background-color: rgb(228, 206, 228);
-    min-height: 100px;
-    width: 100%;
-    max-width: 500px;
-    padding: 1rem;
-    margin: 1rem auto;
-    border-radius: 15px;
-    display: block;
-    
+  background-color: rgb(228, 206, 228);
+  min-height: 100px;
+  width: 100%;
+  max-width: 500px;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  border-radius: 15px;
+  display: block;
 }
 
 fieldset {
-    border: none;
-    margin: 1.5rem 0;
+  border: none;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
 }
 
 fieldset:first-child {
-    margin: 0;
+  margin-top: 0;
 }
 
-form label, form div {
-    font-weight: bold;
+form legend,
+.product label,
+.installation label {
+  font-weight: bold;
+  text-align: left;
 }
 
-form label, form select{
-    display: block;
+form label,
+form select,
+.installation input {
+  display: block;
 }
 
-.product select {
-    height: 55px;
-    width: 100%;
-    min-width: 200px;
-    margin: .5rem 0;
-    padding: 5px;
+.product select,
+.installation input,
+input[type="text"] {
+  height: 55px;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 5px;
 }
 
 .product label {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .rating {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .rating div {
-    text-align: left;
+  text-align: left;
 }
 
 .rating label {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin: 15px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 0px 15px;
+  margin-bottom: 1.5rem;
 }
 
 .rating input {
-    position: absolute;
-    top: 28px;
-    left: 50%;
-    margin-left: -13px;
-    display: block;
-    height: 1.5rem;
-    width: 1.5rem;
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  margin-left: -13px;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.features input[type="checkbox"] {
+  margin: 10px;
+  padding: 0.5rem;
+  height: 25px;
+  width: 25px;
+  vertical-align: middle;
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+}
+
+span {
+  font-weight: normal;
+  color: rgb(1, 1, 121);
+}
+
+input[type="text"] {
+  margin: 0;
+}
+
+input[type="submit"] {
+  width: 90%;
+  text-align: center;
+  height: 55px;
+  margin: 1rem auto;
+  display: block;
+  background-color: rgb(54, 0, 54);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+
+  /* padding: 2%; */
 }
