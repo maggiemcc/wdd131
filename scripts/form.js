@@ -29,5 +29,8 @@ const products = [
 const productDropdown = document.querySelector('#productName');
 
 products.forEach(product => {
-    productDropdown.add(new Option(product.name));
+    const option = document.createElement("option");
+    option.textContent = product.name;
+    option.value = product.name;
+    productDropdown.appendChild(option);
 })

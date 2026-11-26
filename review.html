@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Review Thank You</title>
+    <meta name="author" content="Maggie McCausland">
+    <meta name="description" content="This is my WDD131 Week 5 product review form thank you page.">
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/review.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Thank You</h1>
+    </header>
+    <main class="thankYou">
+        <h2>Thank you for your feedback</h2>
+        <p>Your product review has successfully been submitted.</p>
+        <h3>Reviews Completed: <span id="reviewCount"></span></h3>
+
+        <a href="form.html">Complete Another Product Review</a>
+    </main>
+    <footer>
+        <p>© <span id="currentYear"></span> 🐝 Maggie McCausland 🐝 Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
+
 </html>
