@@ -45,7 +45,7 @@ fieldset:first-child {
 
 form legend,
 .product label,
-.installation label {
+.installation label, .review label {
   font-weight: bold;
   text-align: left;
 }
@@ -65,7 +65,7 @@ input[type="text"] {
   padding: 5px;
 }
 
-.product label {
+.product label, .review label {
   margin-bottom: 0.5rem;
 }
 
@@ -109,7 +109,7 @@ textarea {
   min-height: 150px;
 }
 
-span {
+main span {
   font-weight: normal;
   color: rgb(1, 1, 121);
 }

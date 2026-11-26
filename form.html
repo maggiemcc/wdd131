@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
     <meta name="author" content="Maggie McCausland">
-    <meta name="description" content="WDD131 Week 5 product review form assignment">
+    <meta name="description" content="This is my WDD131 Week 5 product review form assignment.">
     <link href="styles/form.css" rel="stylesheet">
     <script src="scripts/getdates.js" defer></script>
 </head>
@@ -48,14 +48,12 @@
                 <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
             </fieldset>
 
-            <fieldset>
-                <legend>Written Review <span>(optional)</span></legend>
-                <textarea id="review" name="review"></textarea>
-            </fieldset>
+            <fieldset class="review">
+                <!-- <legend>Written Review <span>(optional)</span></legend> -->
+                <label>Written Review <span>(optional)</span><textarea id="review" name="review"></textarea></label>
 
-            <fieldset>
-                <legend>Your Name <span>(optional)</span></legend>
-                <input type="text" id="usersname" name="usersname">
+                <!-- <legend>Your Name <span>(optional)</span></legend> -->
+                <label>Your Name <span>(optional)</span><input type="text" id="usersname" name="usersname"></label>
             </fieldset>
 
             <input type="submit" value="Post Review">
@@ -63,7 +61,7 @@
         </form>
     </main>
     <footer>
-        <p>©<span id="currentYear"></span> 🐝 Maggie McCausland 🐝 Utah, USA</p>
+        <p>© <span id="currentYear"></span> 🐝 Maggie McCausland 🐝 Utah, USA</p>
         <p id="lastModified"></p>
     </footer>
 
