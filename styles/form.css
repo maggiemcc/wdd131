@@ -1,3 +1,11 @@
+:root {
+  --background-color: rgb(54, 0, 54);
+  --sec-background-color: rgb(249, 242, 255);
+  --form-background-color: rgb(229, 218, 238);
+  --text-align: center;
+  --display: block;
+  --border: 1px solid rgb(136, 136, 136);
+}
 * {
   padding: 0;
   margin: 0;
@@ -6,15 +14,15 @@
 
 body {
   width: 100%;
-  max-width: 1200px;
   margin: auto;
+  background-color: var(--sec-background-color);
 }
 
 header,
 footer {
-  background-color: rgb(54, 0, 54);
+  background-color: var(--background-color);
   color: white;
-  text-align: center;
+  text-align: var(--text-align);
   padding: 1rem;
   width: 100%;
 }
@@ -23,19 +31,19 @@ main {
 }
 
 form {
-  background-color: rgb(228, 206, 228);
+  background-color: var(--form-background-color);
   min-height: 100px;
   width: 100%;
-  max-width: 500px;
   padding: 0.5rem;
   margin: 1rem auto;
   border-radius: 15px;
-  display: block;
+  display: var(--display);
+  border: var(--border);
 }
 
 fieldset {
   border: none;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   padding: 0.5rem;
 }
 
@@ -45,7 +53,8 @@ fieldset:first-child {
 
 form legend,
 .product label,
-.installation label, .review label {
+.installation label,
+.review label {
   font-weight: bold;
   text-align: left;
 }
@@ -53,7 +62,7 @@ form legend,
 form label,
 form select,
 .installation input {
-  display: block;
+  display: var(--display);
 }
 
 .product select,
@@ -65,13 +74,14 @@ input[type="text"] {
   padding: 5px;
 }
 
-.product label, .review label {
+.product label,
+.review label {
   margin-bottom: 0.5rem;
 }
 
 .rating {
   width: 100%;
-  text-align: center;
+  text-align: var(--text-align);
 }
 
 .rating div {
@@ -81,7 +91,7 @@ input[type="text"] {
 .rating label {
   position: relative;
   display: inline-block;
-  text-align: center;
+  text-align: var(--text-align);
   margin: 0px 15px;
   margin-bottom: 1.5rem;
 }
@@ -91,7 +101,7 @@ input[type="text"] {
   top: 28px;
   left: 50%;
   margin-left: -13px;
-  display: block;
+  display: var(--display);
   height: 1.5rem;
   width: 1.5rem;
 }
@@ -120,43 +130,47 @@ input[type="text"] {
 
 input[type="submit"] {
   width: 90%;
-  text-align: center;
+  text-align: var(--text-align);
   height: 55px;
   margin: 1rem auto;
-  display: block;
-  background-color: rgb(54, 0, 54);
+  display: var(--display);
+  background-color: var(--background-color);
   color: white;
   font-weight: bold;
   border: none;
   border-radius: 10px;
-
-  /* padding: 2%; */
 }
 
-
 .thankYou {
-    margin: 1rem auto;
-    max-width: 700px;
-    min-height: 300px;
-    text-align: center;
-    border: 1px solid black;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    background-color: rgb(229, 214, 229);
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 700px;
+  min-height: 300px;
+  text-align: var(--text-align);
+  padding: 1rem;
+}
+
+.thankYou div {
+  border: var(--border);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  background-color: var(--form-background-color);
 }
 
 .thankYou h3 {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
-.thankYou a {
-    background-color: rgb(54, 0, 54);
-    padding: 1rem;
-    margin: 2%;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
+.thankYou div a {
+  background-color: var(--background-color);
+  padding: 1rem;
+  margin: 2%;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 2rem;
 }
