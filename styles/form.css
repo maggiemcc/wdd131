@@ -124,8 +124,9 @@ main span {
   color: rgb(1, 1, 121);
 }
 
-input[type="text"] {
-  margin: 0;
+input[type="text"], textarea {
+  margin: 5px 0;
+  padding: .5rem;
 }
 
 input[type="submit"] {
